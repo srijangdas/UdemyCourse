@@ -31,6 +31,9 @@ app.get("/", async (req, res) => {
   res.render("index.ejs", {countries: countries, total: countries.length});
 });
 
+app.post("/add", (res, req) => {
+  
+});
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
